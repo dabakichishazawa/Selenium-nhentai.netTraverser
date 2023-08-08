@@ -8,3 +8,7 @@
 ```
 node hentai-traverser.js (start url)
 ```
+
+# Todo
+
+human authentication Error

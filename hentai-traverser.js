@@ -14,9 +14,9 @@ var int_waitMsForElemLocated = 10000;
 var int_msTimeForTimeOut = 10000;
 // ---------------------</Tunings>
 
-var str_xpathOfProgressMsg = `//div[@id="i2"]/div[@class="sn"]/div`;
-var str_xpathOfImage = `//img[@id="img"]`;
-var str_xpathOfNextAnchor = `//a[@id="next"]`;
+var str_xpathOfProgressMsg = `//div[@id="content"]/section[@class="reader-bar"]/div[@class="reader-pagination"]/button[@class="page-number"]`;
+var str_xpathOfImage = `//div[@id="content"]/section[@class="image-container"]/a[1]/img[1]`;
+var str_xpathOfNextAnchor = `//div[@id="content"]/section[@class="reader-bar"]/div[@class="reader-pagination"]/a[@class="next"]`;
 // -------------------------------------------</Settings>
 
 // Argument check
@@ -158,8 +158,8 @@ var obj_webDriver;
             
         ))
 
-        if(obj_pageReport['nextUrl'] == str_url){   // アクセスした url が 次のページの URL と一致した場合
-                                                    // -> アクセスするべき次の URL が存在しない場合
+        if(!obj_pageReport['nextUrl']){   // アクセスした url が 次のページの URL と一致した場合
+                                          // -> アクセスするべき次の URL が存在しない場合
             break; // ページ網羅 loop を終了
 
         }else{  // アクセスした url が 次のページの URL と一致しない場合
