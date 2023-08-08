@@ -1,0 +1,23 @@
+{
+  "name": "selenium-hentaitraverser",
+  "version": "1.0.0",
+  "description": "- [Node.js](https://nodejs.org/en/)  \r - [Chrome](https://www.google.com/intl/en_us/chrome/) and [ChromeDriver](https://chromedriver.chromium.org/)",
+  "main": "hentai-traverser.js",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabakichishazawa/Selenium-HentaiTraverser.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/dabakichishazawa/Selenium-HentaiTraverser/issues"
+  },
+  "homepage": "https://github.com/dabakichishazawa/Selenium-HentaiTraverser#readme"
+}
